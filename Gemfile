@@ -3,7 +3,8 @@ source 'http://rubygems.org'
 gem 'rails', '3.1.0.rc4' # using ruby 1.9.2p180
 
 gem 'mysql2' # using mysql db
-gem 'authlogic', :git => "git://github.com/radar/authlogic.git"
+gem 'authlogic' # user authentication
+gem 'dynamic_form' # enables easy error messages with forms
 
 # Asset template engines
 gem 'sass-rails', "~> 3.1.0.rc"
@@ -19,9 +20,9 @@ group :test do
 	gem 'database_cleaner'
 	
 	# core testing frameworks
-	gem 'rspec-rails', '>= 2.0.0'
-	gem 'cucumber-rails', '>= 0.5.1'
-	gem 'capybara'
+	gem 'rspec-rails', '>= 2.6.1'
+	gem 'cucumber-rails', '>= 1.0.0'
+	gem 'capybara', '>= 1.0.0'
 	
   # Pretty printed test output
   gem 'turn', :require => false
