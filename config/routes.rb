@@ -4,7 +4,7 @@ Linkbook::Application.routes.draw do
   
   # Use e.g. <%= link_to 'Logout', logout_path %>
   # match 'account' => ''
-	match 'logout' => 'user_sessions#destroy'
+  # match 'logout' => 'user_sessions#destroy'
   
   # setting the home page
   root :to =>'user_sessions#new'
